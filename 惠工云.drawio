@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-06-10T01:57:23.157Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.4 Safari/605.1.15" etag="LM6GkL2rChjTcjkXQWlz" version="21.3.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-06-10T02:53:01.020Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.4 Safari/605.1.15" etag="Z8bq3O-ancKk3DflhQik" version="21.3.8" type="github">
   <diagram name="第 1 页" id="8NQXNdW_FHaR7fizXEua">
     <mxGraphModel dx="954" dy="647" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -26,6 +26,71 @@
         </mxCell>
         <mxCell id="vLR9nLTS-AT_0c7wSXfX-4" value="代码测试" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="200" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vLR9nLTS-AT_0c7wSXfX-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vLR9nLTS-AT_0c7wSXfX-9" target="vLR9nLTS-AT_0c7wSXfX-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vLR9nLTS-AT_0c7wSXfX-9" value="开始" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="555" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vLR9nLTS-AT_0c7wSXfX-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vLR9nLTS-AT_0c7wSXfX-10" target="vLR9nLTS-AT_0c7wSXfX-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vLR9nLTS-AT_0c7wSXfX-10" value="生成三维模型，初始化起始点、终点、途径点、障碍物" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="610" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vLR9nLTS-AT_0c7wSXfX-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vLR9nLTS-AT_0c7wSXfX-13" target="vLR9nLTS-AT_0c7wSXfX-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vLR9nLTS-AT_0c7wSXfX-13" value="生成距离矩阵、校正点选取矩阵" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="705" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vLR9nLTS-AT_0c7wSXfX-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vLR9nLTS-AT_0c7wSXfX-15" target="vLR9nLTS-AT_0c7wSXfX-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vLR9nLTS-AT_0c7wSXfX-15" value="根据约束条件调整距离矩阵和校正矩阵" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="795" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vLR9nLTS-AT_0c7wSXfX-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="vLR9nLTS-AT_0c7wSXfX-18" target="vLR9nLTS-AT_0c7wSXfX-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vLR9nLTS-AT_0c7wSXfX-18" value="使用广度优先算法获取校正点最少个数N" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="795" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vLR9nLTS-AT_0c7wSXfX-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="vLR9nLTS-AT_0c7wSXfX-20" target="vLR9nLTS-AT_0c7wSXfX-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vLR9nLTS-AT_0c7wSXfX-20" value="使用Dijkstra算法得到最短路径对应的校正点个数M" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="705" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vLR9nLTS-AT_0c7wSXfX-26" value="Y" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vLR9nLTS-AT_0c7wSXfX-23" target="vLR9nLTS-AT_0c7wSXfX-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vLR9nLTS-AT_0c7wSXfX-28" value="N" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="vLR9nLTS-AT_0c7wSXfX-23" target="vLR9nLTS-AT_0c7wSXfX-27">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="354" y="590" />
+              <mxPoint x="354" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vLR9nLTS-AT_0c7wSXfX-23" value="N = M" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="600" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vLR9nLTS-AT_0c7wSXfX-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vLR9nLTS-AT_0c7wSXfX-25" target="vLR9nLTS-AT_0c7wSXfX-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vLR9nLTS-AT_0c7wSXfX-25" value="输出校正点个数和对应最优路径" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="610" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vLR9nLTS-AT_0c7wSXfX-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vLR9nLTS-AT_0c7wSXfX-27" target="vLR9nLTS-AT_0c7wSXfX-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vLR9nLTS-AT_0c7wSXfX-27" value="取[M,N]之间的正整数n作为约束条件求校正点个数为n的最短路径" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="294" y="495" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vLR9nLTS-AT_0c7wSXfX-29" value="结束" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="517.5" y="705" width="65" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
